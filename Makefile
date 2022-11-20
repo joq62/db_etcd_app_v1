@@ -7,8 +7,9 @@ all:
 	rm -rf tests_ebin
 	rm -rf ebin;
 	rm -rf Mnesia.*;
-	rm -rf _build;	
-	rebar3 compile;	
+	rm -rf _build;
+	mkdir ebin;
+	rebar3 compile;
 	cp _build/default/lib/*/ebin/* ebin;
 	rm -rf _build;
 	rm -rf tests_ebin;
